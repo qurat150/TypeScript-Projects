@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atm - Ts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Hey User Welcome Bruh :)</h1>
+  <div class="main">
+    <label for="atmPin">Please Enter your Pin :</label>
+    <input type="text" id="inputPin" />
+    <button id="go">Go</button><br>
+    <div id="msgAfterPinCorrection">
+      <p class="printMessageWhenPinWrong"></p>
+    </div>
+
+    <div class="transaction-section">
+      <label for="transaction">Choose your Transaction</label><br />
+      <input type="radio" id="balance" name="transaction" value="balance" />
+      <label for="balance">Balance</label><br />
+      <div class="balancingHandler">
+        <h2 class="defaultBalance"></h2>
+        <label for="transaction">" Would you like to add Amount in your Balance? "</label><br><br>
+        <input type="text" id="gettingInputForAddingBalance" />
+        <button id="addingBalance">Ok</button><br><br>
+      </div>
+      <hr>
+      <input type="radio" id="withdraw" name="transaction" value="withdraw" />
+      <label for="withdraw">Withdraw</label><br />
+      <div class="withdrawHandler">
+        <label for="transaction">" which Amount you want to withDraw? "</label><br>
+        <input type="text" id="gettingInputForwithdraw" />
+        <button id="subtractingAmountInwithdraw">Ok</button><br>
+        <p class="withdrawAmount"></p>
+        <p class="insufficiantBalance"></p>
+      </div>
+      <hr>
+      <input type="radio" id="fastcash" name="transaction" value="fastcash" />
+      <label for="fastcash">Fast Cash</label>
+      <hr>
+    </div>
+
+
+
+  </div>
+
+  <script src="./dist/index.js"></script>
+</body>
+
+</html>

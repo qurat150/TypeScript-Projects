@@ -1,0 +1,9 @@
+body{
+    font-size: 25px;
+}
+.balancingHandler{
+    display: none;
+}
+.withdrawHandler{
+    display: none;
+}

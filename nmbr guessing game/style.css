@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.relative{
+    position: relative;
+}
+.main{
+    height: 100vh;
+}
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+
+}
+#inputField{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 28px;
+    padding: 26px;
+    margin: 40px 0;
+}
+.heheh{
+    margin: 20px 0;
+    /* position: absolute; */
+    top: 50px;
+}
+#answer{
+    margin: 20px 0;
+
+}
+.buttons{
+
+    height: 50px;
+    width: 250px;
+    border-radius: 5px;
+    display: inline;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    flex-direction: row;
+    margin: 40px;
+
+}
