@@ -42,9 +42,16 @@ inquirer
     console.log(answers);
     if (answers.operation == "+") {
         const sumHandler = (operand1, operand2) => {
-            console.log("Hey " + answers.name + " ! " + operand1 + " and " + operand2 + " was added and the Answer is => " + operand1 + operand2);
+            const sum = +operand1 + +operand2;
+            console.log("Hey " + answers.name + " ! " + operand1 + " and " + operand2 + " was added and the Answer is => " + sum);
         };
         sumHandler(answers.operand1, answers.operand2);
+    }
+    if (answers.operation == "-") {
+        const subtractHandler = (operand1, operand2) => {
+            console.log(operand1 + " and " + operand2 + " was subtracted and the Answer is => " + (operand1 - operand2));
+        };
+        subtractHandler(answers.operand1, answers.operand2);
     }
     if (answers.operation == "*") {
         const multiplicationHandler = (operand1, operand2) => {

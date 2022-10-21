@@ -29,7 +29,7 @@ inquirer
     let defaultBalance = 5000;
     if (results.transaction == "Balance") {
         const balanceHandler = () => {
-            console.log(`"Your Default balance is" '${defaultBalance}'`);
+            console.log(`"Your Default balance is '${defaultBalance}'"`);
             inquirer.prompt([{
                     type: "list",
                     name: "balance",
@@ -52,6 +52,7 @@ inquirer
                                 choices: ["Withdraw", "Fast cash"]
                             }]).then((result) => {
                             if (result.transaction == "Withdraw") {
+                                console.log(defaultBalance);
                                 inquirer.prompt([{
                                         type: "input",
                                         name: "withDrawAmount",
@@ -111,5 +112,8 @@ inquirer
                 console.log("You have insufficiant balance !");
             }
         });
+    }
+    if (results.transaction == "Withdraw") {
+        console.log("Approximately same as withdraw..");
     }
 });

@@ -53,6 +53,8 @@ inquirer
 
                                 }]).then((result: any) => {
                                     if (result.transaction == "Withdraw") {
+                                        console.log(defaultBalance);
+                                        
                                         inquirer.prompt([{
                                             type: "input",
                                             name: "withDrawAmount",
